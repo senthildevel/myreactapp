@@ -5,6 +5,9 @@ interface Props {
   children: ReactNode;
   onClose: () => void;
 }
+const buttonClick = () => {
+  console.log("Button clicker");
+};
 
 const Alert = ({ onClose, text, children }: Props) => {
   return (
