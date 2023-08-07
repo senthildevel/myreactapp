@@ -1,0 +1,57 @@
+$myPink: #EE82EE;
+
+p{
+    color: $myPink;
+}
+
+nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+    }
+    a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+    }
+  }
+
+@mixin important-text {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid blue;
+  }
+
+  .section1{
+    @include important-text;
+    padding: 5px;
+  }
+
+  .section2{
+    @include important-text;
+    padding: 10px 15px;
+  }
+
+  .button-basic  {
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .button-report  {
+    @extend .button-basic;
+    background-color: red;
+  }
+
+  .button-submit  {
+    @extend .button-basic;
+    background-color: green;
+    color: white;
+  }

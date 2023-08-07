@@ -1,0 +1,13 @@
+.list-group-item{
+
+    list-style-type: none;
+    padding: 5px;
+    color: green;
+}
+.listGroup{
+    background: grey;
+}
+
+.container{
+    border: 1px solid red;
+}
